@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/defaultHalfTransParent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pop_setting_time_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/defaultWhite"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/pop_setting_time_ll_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/defaultTransParent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pop_color_ll_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_setting_time_toolbar"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_color_ll_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/defaultWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_setting_time_toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <NumberPicker
+            android:id="@+id/setting_np_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/defaultWhite"
+            android:descendantFocusability="blocksDescendants"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="小時"
+            android:textSize="16sp" />
+
+        <NumberPicker
+            android:id="@+id/setting_np_min"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/defaultWhite"
+            android:descendantFocusability="blocksDescendants"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="分鐘"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

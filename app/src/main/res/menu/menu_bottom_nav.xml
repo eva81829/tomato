@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_tomato"
+        android:icon="@drawable/tomato_gray_30px"
+        android:title="@string/title_tomato" />
+
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@drawable/ic_list_24dp"
+        android:title="@string/title_list" />
+
+</menu>

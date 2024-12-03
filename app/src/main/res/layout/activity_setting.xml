@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting.SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_iv_photograph"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_person_24dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setting_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eka Wu"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/setting_tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eva_81829@hotmail.com.tw"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/setting_tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:padding="10dp"
+            android:text="@string/setting_logout"
+            android:textColor="@color/defaultBlue" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/defaultWhite"
+        android:paddingHorizontal="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/defaultLightGray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_ll_tomato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/defaultWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/setting_tv_tomato_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="@string/setting_tomato_time"
+            android:textColor="@color/defaultDarkGray"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_ll_tomato_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/setting_tv_tomato_info"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_info_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/setting_np_tomato_hour"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="小時"
+                android:textSize="16sp" />
+
+            <NumberPicker
+                android:id="@+id/setting_np_tomato_min"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/editText5"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="分鐘"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_ll_short_relex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/defaultWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_ll_tomato">
+
+        <TextView
+            android:id="@+id/setting_tv_short_relex_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="@string/setting_short_relex_time"
+            android:textColor="@color/defaultDarkGray"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_ll_short_relex_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_info_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Text13"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/setting_np_short_relex_hour"
+                style="@style/NumberPickerTextColorStyle"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/test5"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="小時"
+                android:textSize="16sp" />
+
+            <NumberPicker
+                android:id="@+id/setting_np_short_relex_min"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/editText14"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="分鐘"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/setting_sw_directly_go_to_next_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/defaultWhite"
+        android:checked="true"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="@string/setting_directly_go_to_next_task"
+        android:textColor="@color/defaultDarkGray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_ll_short_relex" />
+
+
+    <LinearLayout
+        android:id="@+id/setting_ll_long_relex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/defaultWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_sw_directly_go_to_next_task">
+
+        <TextView
+            android:id="@+id/setting_tv_long_relex_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="@string/setting_long_relex_time"
+            android:textColor="@color/defaultDarkGray"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/setting_ll_long_relex_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_info_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/setting_np_long_relex_hour"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="小時"
+                android:textSize="16sp" />
+
+            <NumberPicker
+                android:id="@+id/setting_np_long_relex_min"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="分鐘"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/setting_sw_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/defaultWhite"
+        android:checked="true"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="@string/setting_shake"
+        android:textColor="@color/defaultDarkGray"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_ll_long_relex" />
+
+    <Switch
+        android:id="@+id/setting_sw_ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/defaultWhite"
+        android:checked="true"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="@string/setting_ring"
+        android:textColor="@color/defaultDarkGray"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_sw_shake" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

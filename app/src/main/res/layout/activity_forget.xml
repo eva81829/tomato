@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.form.ForgetActivity">
+
+    <ProgressBar
+        android:id="@+id/forget_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/forget_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_register3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password"
+        android:textColor="@color/defaultDarkBlue"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register3">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_forget_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/btn_forget_send"
+            style="@style/BlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:text="@string/send" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

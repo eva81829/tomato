@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_color_cl_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/defaultHalfTransParent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/pop_color_ll_color"
+        style="@style/WhiteBoard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="選擇顏色"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/pop_tomato_tv_icon39"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="圖示"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/pop_tomato_ll_icon"
+            app:layout_constraintStart_toStartOf="@id/linearLayout5"
+            app:layout_constraintTop_toTopOf="@+id/pop_tomato_ll_icon">
+
+            <TextView
+                android:id="@+id/pop_color_tv_color1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoGreen"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoGreen" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pop_color_tv_color2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoSkin"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoSkin" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pop_color_tv_color3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoYellow"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoYellow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_tomato_ll_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="圖示"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/pop_tomato_ll_icon"
+            app:layout_constraintStart_toStartOf="@id/linearLayout5"
+            app:layout_constraintTop_toTopOf="@+id/pop_tomato_ll_icon">
+
+            <TextView
+                android:id="@+id/pop_color_tv_color4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoLake"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoLake" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pop_color_tv_color5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoRed"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoRed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pop_color_tv_color6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tomato_gray_50px"
+                android:backgroundTint="@color/tomatoBrown"
+                android:backgroundTintMode="src_in"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:tag="tomatoBrown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

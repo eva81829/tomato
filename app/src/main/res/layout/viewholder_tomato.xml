@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vh_tomato_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/defaultWhite"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/vh_tomato_iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/icon_read"
+        android:backgroundTint="@color/defaultWhite"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vh_tomato_tv_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/defaultTransParent"
+            android:paddingBottom="5dp"
+            android:text="@string/task_name"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/vh_tomato_tv_task_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:text="@string/task_time"
+            android:textSize="10sp"
+            style="@style/TimeShow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vh_tomato_ll_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/vh_tomato_iv_edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_edit_24dp"
+            android:backgroundTint="@color/defaultWhite"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

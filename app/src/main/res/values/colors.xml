@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0071EA</color>
+    <color name="colorPrimaryDark">#DDDDDD</color>
+    <color name="defaultDarkBlue">#DF0B2054</color>
+    <color name="defaultBlue">#0071EA</color>
+    <color name="defaultYellow">#E0BE36</color>
+    <color name="defaultCoffee">#3F220F</color>
+    <color name="defaultLightCoffee">#BA7B2B</color>
+    <color name="defaultRed">#D50000</color>
+    <color name="defaultGray">#797979</color>
+    <color name="defaultLightGray">#B8B8B8</color>
+    <color name="defaultDarkGray">#494949</color>
+    <color name="defaultBlack">#000000</color>
+    <color name="defaultWhite">#FFFFFF</color>
+    <color name="defaultTransParent">#00FFFFFF</color>
+    <color name="defaultHalfTransParent">#80585858</color>
+    <color name="tomatoGreen">#89B986</color>
+    <color name="tomatoLake">#FC6A9B94</color>
+    <color name="tomatoRed">#CF5C5C</color>
+    <color name="tomatoSkin">#DA9E7D</color>
+    <color name="tomatoYellow">#DBCD83</color>
+    <color name="tomatoBrown">#502E24</color>
+</resources>

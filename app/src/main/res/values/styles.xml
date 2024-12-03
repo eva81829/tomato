@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!--status bar背景色-->
+        <item name="android:windowBackground">@color/colorPrimaryDark</item> <!--視窗背景色-->
+        <item name="android:background">@color/defaultTransParent</item>  <!--所有物件的default背景色, 設了icon會有背景色-->
+        <item name="colorAccent">@color/defaultBlue</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="BlueButton">
+        <item name="android:background">@drawable/style_btn_blue</item>
+        <item name="android:textColor">@color/defaultWhite</item>
+    </style>
+
+    <style name="WhiteBoard">
+        <item name="android:background">@drawable/style_ll_board</item>
+    </style>
+
+    <style name="TimeShow">
+        <item name="android:background">@drawable/style_time_show</item>
+    </style>
+
+    <!-- BottomNavigation Style -->
+    <style name="BottomNavigation">
+        <item name="android:background">@color/defaultWhite</item>
+    </style>
+
+    <style name="NumberPickerTextColorStyle">
+        <item name="android:textColor">@color/defaultYellow</item>
+    </style>
+
+</resources>

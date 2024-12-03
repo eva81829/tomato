@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClockActivity">
+
+    <LinearLayout
+        android:id="@+id/clock_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_pb_time">
+
+        <TextView
+            android:id="@+id/clock_tv_amount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/defaultWhite" />
+
+        <TextView
+            android:id="@+id/clock_tv_amount8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tomato_gray_30px"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/defaultWhite" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/clock_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/clock_tv_task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="任務名稱"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/clock_pb_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:indeterminate="false"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_tv_task_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/clock_pb_time"
+        app:layout_constraintEnd_toEndOf="@+id/clock_pb_time"
+        app:layout_constraintStart_toStartOf="@+id/clock_pb_time"
+        app:layout_constraintTop_toTopOf="@+id/clock_pb_time">
+
+        <TextView
+            android:id="@+id/clock_tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/clock_tv_hour_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/clock_tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/clock_tv_min_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=":"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/clock_tv_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clock_btn_start"
+        style="@style/BlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="開始"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_ll" />
+
+    <TextView
+        android:id="@+id/clock_tv_nfc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_phone_150dp"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="NFC"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clock_ll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
